@@ -990,200 +990,396 @@
  
 
     var inword = prompt("Enter your new password : ");
-    var wordlen = inword.length() * "*"
-    alert("Your password is saved : " + wordlen);
+    alert("Your password is saved : " + "**********");
     var input_userpw = prompt("Enter your password to login : ");
     if(inword == input_userpw){
         alert("Correct!! password entered matches the original password.");
     }else{
         alert("wrong password entered.");
     }
-    alert(inword.length);
 
 
-// // 6. This if/else statement does not work. Try to fix it:
-// // var greeting;
-// // var hour = 13;
-// // if (hour < 18) {
-// // greeting = "Good day";
-// // else
-// // greeting = "Good evening";
-// // }
+// 6. This if/else statement does not work. Try to fix it:
+//    var greeting;
+//    var hour = 13;
+//    if (hour < 18) {
+//    greeting = "Good day";
+//    else
+//    greeting = "Good evening";
+//    }
 
 
-// var greeting;
-// var hour = 13;
-// if (hour < 18) {
-// greeting = "Good day";
-// }else{
-// greeting = "Good evening";
-// }
+    var greeting;
+    var hour = 13;
+    if (hour < 18) {
+    greeting = "Good day";
+    }else{
+    greeting = "Good evening";
+    }
 
-// // 7. Write a program that takes time as input from user in 24
-// // hours clock format like: 1900 = 7pm. Implement the
-// // following case using if, else & else if statements
+// 7. Write a program that takes time as input from user in 24
+//    hours clock format like: 1900 = 7pm. Implement the
+//    following case using if, else & else if statements
 
-// var input_time = prompt("Enter time (in 24 hour format .i.e, 1700 for 5 o'clock) : ");
-// input_time = parseInt(input_time);
-// if(input_time >= 0000 && input_time < 1200 ){
-//     alert("Good Morning.");
-// }else if(input_time >= 1200 && input_time < 1700 ){
-//     alert("Good Afternoon.");
-// }else if(input_time >= 1700 && input_time < 2100 ){
-//     alert("Good Evening.");
-// }else if( input_time >= 2100 && input_time <= 2359){
-//     alert("Good Night.");
-// }
-
-// -------------------------------------------------------------------------------------------------------------------------------
-// assignment 13-15 arrays
-
-// // 1. Declare an empty array using JS literal notation to store
-// // student names in future.
-
-// var name_array = [];
-
-// // 2. Declare an empty array using JS object notation to store
-// // student names in future.
-
-// var name_obj = new Array();
-
-// // 3. Declare and initialize a strings array.
-
-// var str_arr = ["abc", "def", "ghi"];
-
-// // 4. Declare and initialize a numbers array.
-
-// var num_arr = [ 2, 4, 6];
-
-// // 5. Declare and initialize a boolean array.
-
-// var bool_arr = [true, false];
-
-// // 6. Declare and initialize a mixed array.
-
-// var mix_arr = ["acb", 1, true, "a", "ali"];
-
-// // 7. Declare and Initialize an array and store available
-// // education qualifications in Pakistan (e.g. SSC, HSC, BCS,
-// // BS, BCOM, MS, M. Phil., PhD). Show the listed
-// // qualifications in your browser like:
-
-// var qual_pak = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
-// document.write("<h1>Qualifications: </h1>");
-// document.write("1) " + qual_pak[0] + "<br>" + "2) " + qual_pak[1] + "3) " + qual_pak[2] + "<br>" + "4) " + qual_pak[3] + "5) " + qual_pak[4] + "<br>" + "6) " + qual_pak[5] + "7) " + qual_pak[6] + "<br>" + "8) " + qual_pak[7]);
-
-// // 8.Write a program to store 3 student names in an array.Take
-// // another array to store score of these three students.
-// // Assume that total marks are 500 for each student, display
-// // the scores & percentages of students like:
-
-// var stu_name = ["Akif", "Aliyan", "Huma"];
-// var  stu_score = [490, 490, 450];
-// var stu_total = 500;
-// document.write("Score of " + stu_name[0] + "is :" + stu_score[0] + " . Percentage is : " + stu_score[0]/stu_total * 100 + "% <br>" );
-// document.write("Score of " + stu_name[1] + "is :" + stu_score[1] + " . Percentage is : " + stu_score[1]/stu_total * 100 + "% <br>" );
-// document.write("Score of " + stu_name[2] + "is :" + stu_score[2] + " . Percentage is : " + stu_score[2]/stu_total * 100 + "% <br>" );
+    var input_time = prompt("Enter time (in 24 hour format .i.e, 1700 for 5 o'clock) : ");
+    input_time = parseInt(input_time);
+    if(input_time >= 0000 && input_time < 1200 ){
+        alert("Good Morning.");
+    }else if(input_time >= 1200 && input_time < 1700 ){
+        alert("Good Afternoon.");
+    }else if(input_time >= 1700 && input_time < 2100 ){
+        alert("Good Evening.");
+    }else if( input_time >= 2100 && input_time <= 2359){
+        alert("Good Night.");
+    }
 
 
-// // 9. Initialize an array with color names. Display the array
-// // elements in your browser.
-// // a. Ask the user what color he/she wants to add to the
-// // beginning & add that color to the beginning of the array.
-// // Display the updated array in your browser.
-// // b. Ask the user what color he/she wants to add to the end
-// // & add that color to the end of the array. Display the
-// // updated array in your browser.
-// // c. Add two more color to the beginning of the array.
-// // Display the updated array in your browser.
-// // d. Delete the first color in the array. Display the updated
-// // array in your browser.
-// // e. Delete the last color in the array. Display the updated
-// // array in your browser.
-// // f. Ask the user at which index he/she wants to add a color
-// // & color name. Then add the color to desired
-// // position/index. . Display the updated array in your
-// // browser.
-// // g. Ask the user at which index he/she wants to delete
-// // color(s) & how many colors he/she wants to delete. Then
-// // remove the same number of color(s) from user-defined
-// // position/index. . Display the updated array in your
-// // browser.
+   
+  // assignment 13-15 arrays
+ //
+//
 
-// var col_arr = ["Magenta ", "amber ", "Amethyst ","Aquamarine ","Ashy "];
-// document.write("Available colours are : " + col_arr);
-// var choosen_col = prompt("Kindly enter the colour you want to display at the start." );
-// function  choosen(a) {
-//     col_arr = col_arr.push(a);
-//   }
-//  choosen(choosen_col) 
-// document.write(col_arr);
+// 1. Declare an empty array using JS literal notation to store
+//    student names in future.
 
-// // not done!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    var namearray = [];
 
-// // 10. Write a program to store student scores in an array &
-// // sort the array in ascending order using Array’s sort
-// // method.
-// var score_array = [32, 230, 480, 120];
-// document.write("Score of Students : ");
-//  for(var i = 0 ;i < score_array.length; i++){
-//   document.write(score_array[i]+", ");
-// }
-// document.write("<br>")
-// var sorted_arr = score_array.sort();
-// document.write("Ordered Score of Students : ");
-// for(var i = 0 ;i < sorted_arr.length; i++){
-//     document.write(sorted_arr[i]+", ");
-//   }
+// 2. Declare an empty array using JS object notation to store
+//    student names in future.
 
-// // 11.
-// // Write a program to initialize an array with city names.
-// // Copy 3 array elements from cities array to selectedCities
-// // array.
-// var city_name = ["Karachi", "Islamabad","Lahore", "Qutta", "Peshawar"];
-// var selected_city = [city_name[1], city_name[3], city_name[4]];
-// document.write("Cities list: ");
-// document.write("<br>" + city_name);
-// document.write("<br>Selected Cities list: ");
-// document.write("<br>" + selected_city);
+    var nameobj = new Array();
 
-// // 12. Write a program to create a single string from the
-// // below mentioned array:
-// // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
-// // (Use array’s join method)
+// 3. Declare and initialize a strings array.
 
-// var arr = ["This ", "is ", "my ", "cat. "];
-// var new_arr = arr.join("");
-// document.write("Array : <br>" + arr + "<br>");
-// document.write("String : <br>" + new_arr);
+    var strarr = ["abc", "def", "ghi"];
 
-// // 13.
-// // Create a new array. Store values one by one in such a way
-// // that you can access the values in the order in which they
-// // were stored. (FIFO-First In First Out)
+// 4. Declare and initialize a numbers array.
 
-// var fifo_arr = new Array();
-// fifo_arr.push("a");
-// fifo_arr.push("b");
-// fifo_arr.push("c");
-// fifo_arr.push("d");
-// fifo_arr.push("e");
-// document.write("array : <br>" + fifo_arr + "<br>");
+    var numarr = [ 2, 4, 6];
+
+// 5. Declare and initialize a boolean array.
+
+    var boolarr = [true, false];
+
+// 6. Declare and initialize a mixed array.
+
+    var mixarr = ["acb", 1, true, "a", "ali"];
+
+// 7. Declare and Initialize an array and store available
+//    education qualifications in Pakistan (e.g. SSC, HSC, BCS,
+//    BS, BCOM, MS, M. Phil., PhD). Show the listed
+//    qualifications in your browser like:
+
+    var qualpak = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
+    document.write("<h1>Qualifications: </h1>");
+    document.write("1) " + qualpak[0] + "<br>" + "2) " + qualpak[1] + "3) " + qualpak[2] + "<br>" + "4) " + qualpak[3] + "5) " + qualpak[4] + "<br>" + "6) " + qualpak[5] + "7) " + qualpak[6] + "<br>" + "8) " + qualpak[7]);
+
+// 8.Write a program to store 3 student names in an array.Take
+//   another array to store score of these three students.
+//   Assume that total marks are 500 for each student, display
+//   the scores & percentages of students like:
 
 
-// document.write("Out : <br>" + fifo_arr.shift()+ "<br>");
-// document.write("Out : <br>" + fifo_arr.shift()+ "<br>");
-// document.write("Out : <br>" + fifo_arr.shift()+ "<br>");
-// document.write("Out : <br>" + fifo_arr.shift()+ "<br>");
-// document.write("Out : <br>" + fifo_arr.shift()+ "<br>");
+    var stuname = ["Akif", "Aliyan", "Huma"];
+    var  stuscore = [490, 490, 450];
+    var stutotal = 500;
+    document.write("Score of " + stuname[0] + "is :" + stuscore[0] + " . Percentage is : " + stuscore[0]/stutotal * 100 + "% <br>" );
+    document.write("Score of " + stuname[1] + "is :" + stuscore[1] + " . Percentage is : " + stuscore[1]/stutotal * 100 + "% <br>" );
+    document.write("Score of " + stuname[2] + "is :" + stuscore[2] + " . Percentage is : " + stuscore[2]/stutotal * 100 + "% <br>" );
 
 
-// 14.
-// Create a new array. Store values one by one in such a way
-// that you can access the values in reverse order. (Last In-
-// First Out)
+// 9. Initialize an array with color names. Display the array
+//    elements in your browser.
+//      a. Ask the user what color he/she wants to add to the
+//         beginning & add that color to the beginning of the array.
+//         Display the updated array in your browser.
+//      b. Ask the user what color he/she wants to add to the end
+//        & add that color to the end of the array. Display the
+//        updated array in your browser.
+//      c. Add two more color to the beginning of the array.
+//         Display the updated array in your browser.
+//      d. Delete the first color in the array. Display the updated
+//         array in your browser.
+//      e. Delete the last color in the array. Display the updated
+//         array in your browser.
+//      f. Ask the user at which index he/she wants to add a color
+//         & color name. Then add the color to desired
+//         position/index. . Display the updated array in your
+//         browser.
+//      g. Ask the user at which index he/she wants to delete
+//         color(s) & how many colors he/she wants to delete. Then
+//         remove the same number of color(s) from user-defined
+//         position/index. . Display the updated array in your
+//         browser.
 
-// 15.
-// Write a program to store phone manufacturers (Apple,
-// Samsung, Motorola, Nokia, Sony & Haier) in an array.
-// Display the following dropdown/select men
+    var colarr = ["Magenta ", "amber ", "Amethyst ","Aquamarine ","Ashy "];
+    document.write("Available colours are : " + colarr);
+    var choosencol = prompt("Kindly enter the colour you want to display at the start." );
+    function  choosen(a) {
+        colarr = colarr.push(a);
+    }
+    choosen(choosencol) 
+    document.write(colarr);
+
+
+// 10. Write a program to store student scores in an array &
+//     sort the array in ascending order using Array’s sort
+//     method.
+
+    var scorearray = [32, 230, 480, 120];
+    document.write("Score of Students : ");
+    for(var i = 0 ;i < scorearray.length; i++){
+    document.write(scorearray[i]+", ");
+    }
+    document.write("<br>")
+    var sortedarr = scorearray.sort();
+    document.write("Ordered Score of Students : ");
+    for(var i = 0 ;i < sortedarr.length; i++){
+        document.write(sortedarr[i]+", ");
+    }
+
+// 11. Write a program to initialize an array with city names.
+//     Copy 3 array elements from cities array to selectedCities
+//     array.
+
+
+    var cityname = ["Karachi", "Islamabad","Lahore", "Qutta", "Peshawar"];
+    var selectedcity = [cityname[1], cityname[3], cityname[4]];
+    document.write("Cities list: ");
+    document.write("<br>" + cityname);
+    document.write("<br>Selected Cities list: ");
+    document.write("<br>" + selectedcity);
+
+
+// 12. Write a program to create a single string from the
+//     below mentioned array:
+//     var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+//     (Use array’s join method)
+
+
+    var arr = ["This ", "is ", "my ", "cat. "];
+    var newarr = arr.join("");
+    document.write("Array : <br>" + arr + "<br>");
+    document.write("String : <br>" + newarr);
+
+
+// 13. Create a new array. Store values one by one in such a way
+//     that you can access the values in the order in which they
+//     were stored. (FIFO-First In First Out)
+
+
+    var fifoarr = new Array();
+    fifoarr.push("a");
+    fifoarr.push("b");
+    fifoarr.push("c");
+    fifoarr.push("d");
+    fifoarr.push("e");
+    document.write("array : <br>" + fifoarr + "<br>");
+
+
+    document.write("Out : <br>" + fifoarr.shift()+ "<br>");
+    document.write("Out : <br>" + fifoarr.shift()+ "<br>");
+    document.write("Out : <br>" + fifoarr.shift()+ "<br>");
+    document.write("Out : <br>" + fifoarr.shift()+ "<br>");
+    document.write("Out : <br>" + fifoarr.shift()+ "<br>");
+
+
+// 14. Create a new array. Store values one by one in such a way
+//     that you can access the values in reverse order. (Last In-
+//     First Out)
+
+
+    var lifoarr = new Array();
+    lifoarr.push("a");
+    lifoarr.push("b");
+    lifoarr.push("c");
+    lifoarr.push("d");
+    lifoarr.push("e");
+    document.write("array : <br>" + lifoarr + "<br>");
+
+
+    document.write("Out : <br>" + lifoarr.pop()+ "<br>");
+    document.write("Out : <br>" + lifoarr.pop()+ "<br>");
+    document.write("Out : <br>" + lifoarr.pop()+ "<br>");
+    document.write("Out : <br>" + lifoarr.pop()+ "<br>");
+    document.write("Out : <br>" + lifoarr.pop()+ "<br>");
+
+
+// 15. Write a program to store phone manufacturers (Apple,
+//     Samsung, Motorola, Nokia, Sony & Haier) in an array.
+//     Display the following dropdown/select mennu in your
+//     browser using document.write() method:
+
+
+    var moble = ["Apple","Samsung", "Motorola", "Nokia", "Sony" , "Haier"];
+    document.write("<form><label>mobile:</label><select><option>" + moble[0] +"</option><option>" + moble[1] +"</option><option>" + moble[2] +"</option><option>" + moble[3] +"</option><option>" + moble[4] +"</option><option>" + moble[5] +"</option></select></form>");
+
+
+  // assignment 17 - 20 
+ // 
+//
+
+
+//   1. Declare and initialize an empty multidimensional array.
+//      (Array of arrays)
+
+
+var multarr = [[[] , []],[[[] , []]],[[ [] , []]],];
+
+
+// 2. Declare and initialize a multidimensional array
+// representing the following matrix:
+
+
+    for(i=1; i< 4; i++){
+    for(j=0; j< 4; j++){
+        document.write([j]);    
+        }
+        document.write("<br>")
+    }
+    
+
+// 3. Write a program to print numeric counting from 1 to 10.
+
+
+    for(j=0; j< 11; j++){
+            document.write([j]);    
+            
+            document.write("<br>")
+        }
+
+
+// 4. Write a program to print multiplication table of any
+//    number using for loop. Table number & length should be
+//    taken as an input from user.
+
+    var inhnum = prompt("Enter the number to dispaly multiplication table :");
+    var inen = prompt("Enter the number upto which multiplication table should display:");
+    inen = parseInt(inen)
+    inhum = parseInt(inhum)
+
+    function multiplyinput(desirednum , desiredlen ){
+        for(var i = 1; i <= desiredlen; i++){
+            var result = desirednum + " * " + i + " = " + i*desirednum + "<br>";
+            document.write(result);
+        }
+    }
+    multiplyinput(inhum, inen)
+
+// 5. Write a program to print items of the following array
+//    using for loop:
+//    fruits = [“apple”, “banana”, “mango”, “orange”,
+//    “strawberry”]
+
+
+    var fruiters = ["apple", "banana", "mango", "orange",
+        "strawberry"];
+
+        for(j=0; j< fruiters.length; j++){
+                    document.write(fruiters[j] + "<br>");    
+
+                }
+                document.write( "<br><br>")
+    for(j=0; j< fruiters.length; j++){
+                    document.write("Element at index " + j +" is " + fruiters[j] + "<br>");    
+    
+        }        
+
+
+// 6. Generate the following series in your browser. See
+//    example output.
+//      a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+//      b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+//      c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+//      d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+//      e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+
+
+    document.write( "<h1>Counting<h1><br>");
+    for(j=0; j< 16; j++){
+        document.write(j + ",")
+    }
+
+    document.write( "<h1>Reverse Counting<h1><br>");
+    for(j=10; j>0; j--){
+        document.write(j + ",")
+    }
+
+    document.write( "<h1>Even<h1><br>");
+    for(j=2; j < 22; j+=2){
+        document.write(j + ",")
+    }
+
+    document.write( "<h1>Odd<h1><br>");
+    for(j=1; j < 20; j+=2){
+        document.write(j + ",")
+    }
+
+
+
+// 7. You have an array
+//    A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+//    Write a program to enable “search by user input” in an
+//    array.
+//    After searching, prompt the user whether the given item is
+//    found in the list or not. Example:
+
+
+    var cakersss = ["cake", "apple pie", 'cookie', "chips", "patties"];
+    var unitem = prompt("Welcome to JS Bakery. What would you want to order ?");
+    unitem = unitem.toLowerCase();
+
+    if(A.indexOf(unitem) !== -1){
+        alert(unitem + " is available at index " + A.indexOf(unitem) + " in our bakery.");
+    } else{
+        alert("We are sorry," + unitem + "not available in our bakery");
+    }
+
+
+// 8. Write a program to identify the largest number in the
+//    given array.
+//    A = [24, 53, 78, 91, 12].
+
+
+    var  arraylisters = [24, 53, 78, 91, 12];
+
+    document.write("Array items : " + arraylisters);
+
+    var largesters = 0;
+
+    for(var i=0; i < arraylisters.length ;i++){
+            
+        if(largesters < arraylisters[i]) {
+            largesters=array[i];
+        }
+        document.write("The largest number is : " + largesters);
+    }
+
+
+// 9. Write a program to identify the smallest number in the
+//    given array.
+//    A = [24, 53, 78, 91, 12]
+
+    var smallestarrayers = [24, 53, 78, 91, 12];
+
+    document.write("Array items : " + smallestarrayers);
+
+    var smallesters = 0;
+
+    for(var i=0; i < smallestarrayers.length ;i++){
+        if( smallestarrayers[i] < smallesters) {
+            smallestarrayers = array[i];
+        }
+        document.write("The largest number is : " + largesters);
+    }
+
+// 10. Write a program to print multiples of 5 ranging 1 to
+//     100.
+
+        for(var i = 1; i <= 20; i++){
+            var resuers =  i*5 ;
+            document.write(resuers + ", ");
+            
+        }
+    
+  
